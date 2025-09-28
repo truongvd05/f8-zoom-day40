@@ -1,0 +1,25 @@
+.content {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    text-align: center;
+}
+
+.task {
+    display: flex;
+    margin: auto 10px;
+    width: 200px;
+}
+
+.wrap {
+    display: flex;
+    gap: 10px;
+}

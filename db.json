@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Học HTML cơ bản"
+    },
+    {
+      "id": "2",
+      "title": "Làm quen với CSS"
+    },
+    {
+      "id": "3",
+      "title": "Thực hành Flexbox"
+    },
+    {
+      "id": "4",
+      "title": "Học JavaScript cơ bản"
+    },
+    {
+      "id": "5",
+      "title": "Tìm hiểu DOM Manipulation"
+    },
+    {
+      "id": "6",
+      "title": "Xây dựng mini project với JS"
+    },
+    {
+      "id": "7",
+      "title": "Học Git cơ bản"
+    },
+    {
+      "id": "8",
+      "title": "Tạo repo GitHub đầu tiên"
+    },
+    {
+      "id": "6f82",
+      "title": " đây là task mới"
+    }
+  ]
+}

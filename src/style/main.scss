@@ -1,0 +1,30 @@
+@import "./reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size:  inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
