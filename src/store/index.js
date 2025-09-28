@@ -1,5 +1,5 @@
 import createStore from "@/libs/redux";
-import reducer from "./reducers/taskReducer.js";
+import { reducer } from "./reducers/taskReducer.js";
 
 const init = {
     tasks: [],

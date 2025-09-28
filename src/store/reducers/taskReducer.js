@@ -1,4 +1,10 @@
-function reducer(state = init, action) {
+const init = {
+    tasks: [],
+    loading: true,
+    error: null,
+};
+
+export function reducer(state = init, action) {
     switch (action.type) {
         case "SET_TASKS":
             return {
@@ -28,6 +34,16 @@ function reducer(state = init, action) {
                     return task.id !== action.payload;
                 }),
             };
+        case "FETCH_FALSE":
+            return {
+                ...state,
+                loading: false,
+            };
+        case "FETCH_SUCSSES":
+            return {
+                ...state,
+                loading: true,
+            };
         default:
             return {
                 ...state,
@@ -35,5 +51,3 @@ function reducer(state = init, action) {
             };
     }
 }
-
-export default reducer;

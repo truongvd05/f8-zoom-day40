@@ -18,6 +18,10 @@ function TaskList() {
                 type: "SET_TASKS",
                 payload: data,
             })
+        }).finally(() =>{
+            dispatch({
+                type: "FETCH_FALSE",
+            })
         })
     }, [])
     const handleDelete = (id) => {
@@ -35,8 +39,14 @@ function TaskList() {
             setIsDeleting(false)
         })
     }
+    if(loading) {
+        return <p>loading...</p>
+    }
+    if(tasks.length === 0) {
+        return <p>Chưa có task nào</p>
+    }
     return (
-        loading ? <p>loading...</p> : (<div className={style.content}>
+        <div className={style.content}>
             <h1>Tasklist</h1>
             <ul className={style.container}>
                 {tasks.map((item) => {
@@ -46,7 +56,7 @@ function TaskList() {
                 })}
             </ul>
             <button><NavLink to={`/new-task`}>Create New Task</NavLink></button>
-        </div>)
+        </div>
     )
 }
 
