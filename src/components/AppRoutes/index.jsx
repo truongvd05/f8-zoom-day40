@@ -1,4 +1,4 @@
-import { HashRouter, NavLink, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Navigation from "../Navigation";
 import TaskList from "@/pages/TaskList";
 import EditTask from "@/pages/EditTask";
@@ -12,11 +12,10 @@ function AppRoutes() {
                 <Navigation/>
                 <Routes>
                     <Route path="/" element={<TaskList/>}/>
-                    <Route path="/redux.html"/>
-                    <Route path="/New-Task" element={<NewTask/>}/>
-                    <Route path="/:id/edit" element={<EditTask/>} />
+                    <Route path="redux.html" element={<TaskList/>}/>
+                    <Route path="New-Task" element={<NewTask/>}/>
+                    <Route path=":id/edit" element={<EditTask/>} />
                     <Route path='/*' element={<NotFound/>}></Route>
-
                 </Routes>
             </HashRouter>
         </>
