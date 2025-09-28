@@ -4,12 +4,14 @@
     display: flex;
 }
 
-.container > li > a{
+.container > li > *{
     display: flex;
     padding: 5px;
     color: black;
 }
-
-.container > li > a:hover {
+.container > li {
+    display: flex;
+}
+.container > li > *:hover {
     background-color: bisque;
 }
